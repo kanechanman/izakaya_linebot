@@ -63,7 +63,7 @@ def RailAPI(station, pref):
     return lat, lng
 
 def HotpepperAPI(lat, lng, free_drink=0, code=None):
-    api_key="42a14be89ba51a23" 
+    api_key="" #APIキー 
     if code:
         api = "http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?" \
                 "key={key}&lat={lat}&lng={lng}&budget={code}&free_drink={free_drink}&range=3&count=200&order=1&format=json"
